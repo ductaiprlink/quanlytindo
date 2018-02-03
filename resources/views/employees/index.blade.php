@@ -135,7 +135,7 @@
 
                                 <tr>
                                     <td>{{ $emp->id }}</td>
-                                    <td>{{ $emp->name }}</td>
+                                    <td><a href="{{ route('employees.show', ['id' => $emp->id]) }}">{{ $emp->name }}</a></td>
                                     <td>{{ $emp->address }}</td>
                                     <td>@if ($emp->showhide == 1)
                                             <span class="label label-info">{{ $emp->status->status }}</span>
